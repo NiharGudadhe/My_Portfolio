@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIHAR GUDADHE | Data Scientist</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <div id="canvas-container"></div>
+  
+  <div id="preloader">
+    <div class="cyber-loader"></div>
+    <div class="loader-text" data-text="INITIALIZING SYSTEM...">INITIALIZING SYSTEM...</div>
+  </div>
+
+  <div class="letterbox-bar letterbox-top" aria-hidden="true"></div>
+  <div class="letterbox-bar letterbox-bottom" aria-hidden="true"></div>
+
+  <div class="gradient-bg-overlay" aria-hidden="true"></div>
+  <div class="noise-overlay"></div>
+  <div class="cursor-dot" data-cursor-dot></div>
+  <div class="cursor-outline" data-cursor-outline></div>
+
+  <div id="nav-backdrop"></div>
+
+  <nav class="glass-nav">
+    <div class="logo">NIHAR<span class="highlight"> GUDADHE</span></div>
+    <div class="nav-links">
+      <a href="#home" class="magnetic-link">Home</a>
+      <a href="#projects" class="magnetic-link">Projects</a>
+      <a href="#about" class="magnetic-link">About Me</a>
+      <a href="#skills" class="magnetic-link">Skills</a>
+      <a href="#resume" class="magnetic-link">Resume</a>
+      <a href="#certifications" class="magnetic-link">Certifications</a>
+      <a href="#contact" class="magnetic-link">Contact</a>
+    </div>
+    <button id="mobile-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section id="home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h2 class="pre-title"><i class="fa-solid fa-user"></i> Who Am I !</h2>
+          <h1 class="glitch-header" data-text="NIHAR GUDADHE">NIHAR GUDADHE</h1>
+          <div class="role-container">
+            <span class="role-prefix">🔮 </span>
+            <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-bio">
+            Turning messy business problems into working ML solutions across the full data science lifecycle — <strong>EDA</strong>, <strong>feature engineering</strong>, <strong>modeling</strong>, and <strong>forecasting</strong>.
+          </p>
+          <h2 class="pre-title"> ♠ "I can predict your ŷ , but first I prefer to minimize my J(θ)."</h2>
+          
+          <div class="cta-group">
+            <a href="#projects" class="btn-3d primary">
+              <span>VIEW PROJECTS</span>
+            </a>
+            <a href="#contact" class="btn-3d secondary">
+              <span>CONTACT ME</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo reveal reveal-right">
+          <div class="hero-photo-frame">
+            <img src="profile.jpg" alt="Nihar Gudadhe" />
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-text reveal reveal-left">
+          <h2 class="about-title">ABOUT ME</h2>
+          <p>I am a Data Scientist based in Nagpur, India, with hands-on experience across the full data science lifecycle — EDA, feature engineering, model building, and evaluation for prediction, classification, and time series forecasting problems.</p>
+          <p>I'm comfortable working in Python and SQL, with a solid grounding in statistics and a track record of turning messy business problems into working ML solutions, most notably integrating CRM and ERP systems to streamline the Quote-to-Cash process.</p>
+          <p>I'm also exploring Generative AI and LLMs (prompt engineering, RAG) alongside my core ML and analytics work in Power BI.</p>
+          <p class="about-goal">My goal is to keep building production-grade ML systems that turn raw business data into measurable operational impact.</p>
+          <div class="about-buttons">
+            <a href="#resume" 
+     class="resume-btn">
+      <span>VIEW RESUME</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+            <a href="#contact" class="hire-me-btn">
+      <span>GET IN TOUCH</span>
+      <i class="fa-solid fa-handshake"></i>
+    </a>
+          </div>
+
+        </div>
+
+        <div class="about-logo reveal reveal-right delay-200">
+          <img src="main.png" alt="Nihar Gudadhe">
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="section-header reveal">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="project-gallery">
+        <div class="project-card glass-card tilt-effect reveal" data-project="shoppers-intent">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>Shoppers Intent MLOps Pipeline</h3>
+            <p>End-to-end production-grade MLOps classification system predicting online shopper purchase intentions.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-robot"></i> RF / XGBoost / LightGBM</span>
+              <span class="card-stat"><i class="fa-solid fa-server"></i> Deployed on Render</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">MLflow</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Evidently AI</span>
+            </div>
+            <div class="card-links">
+              <a href="https://shoppers-intent-mlops-vxo7.onrender.com/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/Shoppers-Intent-MLOps" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-100" data-project="laptop-price">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>Laptop Price Prediction System</h3>
+            <p>End-to-end machine learning pipeline for laptop price prediction with a modular, deployment-ready structure.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-diagram-project"></i> Modular Pipeline</span>
+              <span class="card-stat"><i class="fa-solid fa-code"></i> Flask / FastAPI</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Flask</span>
+              <span class="chip">FastAPI</span>
+            </div>
+            <div class="card-links">
+              <a href="https://laptoppricepredictionmle2eproject-kmcx4rtwptrbmdd4mjn7hd.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/Laptop_Price_Prediction_ML_E2E_Project" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="crm-erp">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">DATA ENGINEERING</div>
+            <h3>Enterprise CRM &amp; ERP Analytics Framework</h3>
+            <p>Automated ETL pipelines and BI dashboards unifying CRM and ERP data for operational and predictive analytics.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-chart-line"></i> Power BI Dashboards</span>
+              <span class="card-stat"><i class="fa-solid fa-database"></i> ETL Pipelines</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Power BI</span>
+            </div>
+            <div class="card-links">
+              <button type="button" id="crm-no-demo-btn" class="link-btn model-only" aria-haspopup="dialog" aria-controls="custom-modal" aria-expanded="false" title="Internal enterprise project — no public demo">
+                <i class="fa-solid fa-lock"></i> INTERNAL PROJECT
+              </button>
+              <a href="https://github.com/NiharGudadhe" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-100" data-project="loan-default">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>Loan Default Risk Prediction</h3>
+            <p>End-to-end app predicting the probability of loan default using an XGBoost classifier, with built-in fairness and bias evaluation.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-bolt"></i> XGBoost</span>
+              <span class="card-stat"><i class="fa-solid fa-scale-balanced"></i> Fairness Audit</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">XGBoost</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://nihargudadhe-loan-default-prediction-xgboost-streaml-app-odla6r.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/Loan-Default-Prediction-XGBoost-Streamlit" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="spam-classifier">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>Spam Email Classifier</h3>
+            <p>Production-grade system classifying emails as spam or legitimate, with single-email and batch MBOX-archive processing.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-envelope"></i> MBOX Support</span>
+              <span class="card-stat"><i class="fa-solid fa-robot"></i> SVM / LogReg / RF</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Pandas</span>
+            </div>
+            <div class="card-links">
+              <a href="https://nihargudadhe-spam-email-classifier-e2e-ml-project-app-tzam91.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/Spam-Email-Classifier-E2E-ML_Project" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header reveal">
+        <h2 class="section-title">SKILLS & TOOLS</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-block" data-level="90"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Python</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="85"><div class="skill-icon"><i class="fa-solid fa-code"></i></div><h4>SQL</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="80"><div class="skill-icon"><i class="fa-solid fa-brain"></i></div><h4>Machine Learning</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div><h4>Deep Learning</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-comments"></i></div><h4>NLP</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-solid fa-eye"></i></div><h4>Computer Vision</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-robot"></i></div><h4>Generative AI / LLMs</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-chart-area"></i></div><h4>Statistics</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div><h4>EDA</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-broom"></i></div><h4>Data Cleaning</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-sliders"></i></div><h4>Feature Engineering</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="80"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Pandas / NumPy</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="75"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Scikit-learn</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-bolt"></i></div><h4>XGBoost</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div><h4>TensorFlow / PyTorch</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Matplotlib / Seaborn</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="85"><div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div><h4>Power BI / DAX</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-solid fa-chart-simple"></i></div><h4>Tableau</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h4>PostgreSQL / MySQL</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><h4>FastAPI</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-brands fa-docker"></i></div><h4>Docker</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="90"><div class="skill-icon"><i class="fa-brands fa-git"></i></div><h4>Git & GitHub</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-brands fa-aws"></i></div><h4>AWS</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="section-header reveal">
+        <h2 class="section-title">RESUME</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="resume-wrapper reveal">
+        <div class="resume-actions">
+          <a href="NiharGudadheResume.pdf" target="_blank" class="resume-action-btn primary-action">
+            <i class="fa-solid fa-expand"></i>
+            <span>View Fullscreen</span>
+          </a>
+          <a href="NiharGudadheResume.pdf" download class="resume-action-btn secondary-action">
+            <i class="fa-solid fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+        </div>
+        <div class="resume-frame-container">
+          <embed
+            src="NiharGudadheResume.pdf#toolbar=0&navpanes=0"
+            type="application/pdf"
+            title="Nihar Gudadhe Resume"
+            class="resume-embed"
+          />
+          <div class="resume-fallback">
+            <p>Unable to display PDF.
+              <a href="NiharGudadheResume.pdf" target="_blank" class="resume-fallback-link">Open in new tab</a>
+            </p>
+          </div>
+        </div>
+        <div class="resume-mobile-card">
+          <i class="fa-solid fa-file-lines resume-mobile-icon"></i>
+          <p class="resume-mobile-title">MY RESUME</p>
+          <p class="resume-mobile-subtitle">PDF preview is not supported on mobile. Use the buttons below to open or download.</p>
+          <div class="resume-mobile-actions">
+            <a href="NiharGudadheResume.pdf" target="_blank" class="resume-action-btn primary-action">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <span>Open Resume</span>
+            </a>
+            <a href="NiharGudadheResume.pdf" download class="resume-action-btn secondary-action">
+              <i class="fa-solid fa-download"></i>
+              <span>Download</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="section-header reveal">
+        <h2 class="section-title">CERTIFICATIONS</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="cert-grid reveal">
+        <div class="cert-placeholder">
+          <div class="cert-placeholder-rings">
+            <div class="cert-ring cert-ring-1"></div>
+            <div class="cert-ring cert-ring-2"></div>
+            <i class="fa-solid fa-certificate cert-placeholder-icon"></i>
+          </div>
+          <p class="cert-placeholder-text">Data Science Essentials with Python</p>
+          <p class="cert-placeholder-subtext">Cisco Networking Academy — <span class="cert-placeholder-highlight">Completed July 2026</span></p>
+        </div>
+        <div class="cert-placeholder">
+          <div class="cert-placeholder-rings">
+            <div class="cert-ring cert-ring-1"></div>
+            <div class="cert-ring cert-ring-2"></div>
+            <i class="fa-solid fa-certificate cert-placeholder-icon"></i>
+          </div>
+          <p class="cert-placeholder-text">Diploma in Machine Learning using Python</p>
+          <p class="cert-placeholder-subtext">Alison — <span class="cert-placeholder-highlight">Completed July 2026</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="glass-panel contact-panel reveal reveal-left">
+        <div class="contact-left">
+          <h2>Get in <br>Touch</h2>
+          <p>I am interested in collaborating and working on Data Science AI, Machine Learning, Deep Learning, and Analytics projects.</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/nihar-gudadhe/" target="_blank">LINKEDIN</a>
+            <a href="https://github.com/NiharGudadhe" target="_blank">GITHUB</a>
+            <a href="mailto:gudadhenihar@gmail.com">EMAIL</a>
+          </div>
+        </div>
+
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" required placeholder=" " />
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" required placeholder=" " />
+            <label for="email">Email Address</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" required placeholder=" "></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>SEND</span>
+            <div class="btn-bg"></div>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-analytics">
+        <h3>GitHub Contributions</h3>
+        <a href="https://github.com/NiharGudadhe" target="_blank" rel="noopener noreferrer" class="github-contribution-link" aria-label="View NiharGudadhe GitHub profile">
+          <img src="https://ghchart.rshah.org/00f3ff/NiharGudadhe" alt="NiharGudadhe contribution activity graph" loading="lazy" class="github-contribution-graph" />
+        </a>
+      </div>
+      <p>© 2026 NIHAR GUDADHE. Made with ♥️ by Nihar Gudadhe</p>
+    </footer>
+
+  </main>
+
+  <!-- HOVER PANEL -->
+  <div id="hover-panel" class="hover-panel">
+    <button type="button" class="close-panel-btn" aria-label="Close panel">&times;</button>
+    <div class="panel-content">
+      <h3 id="panel-title">Coming Soon</h3>
+      <p id="panel-description">This project is being updated with more details.</p>
+    </div>
+  </div>
+
+  <div id="custom-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="model-modal-title" aria-describedby="model-modal-desc" aria-hidden="true">
+    <div class="modal-content glass-panel">
+      <button type="button" class="modal-close" data-modal-close aria-label="Close dialog">&times;</button>
+      <div class="status-pill" aria-hidden="true">MODEL ONLY</div>
+      <h3 id="model-modal-title"><i class="fa-solid fa-robot"></i> MODEL STATUS</h3>
+      <p id="model-modal-desc">This project has a trained model available, but no live interactive demo is currently deployed.</p>
+      <button type="button" id="close-modal" class="btn-3d primary small" data-modal-close>UNDERSTOOD</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

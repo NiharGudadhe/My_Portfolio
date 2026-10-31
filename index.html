@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIHAR GUDADHE | Data Scientist</title>
+  <title>NIHAR GUDADHE | Data Scientist & Analyst</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +61,7 @@
             <span class="typewriter" id="typewriter"></span><span class="cursor-blink">|</span>
           </div>
           <p class="hero-bio">
-            Turning messy business problems into working ML solutions across the full data science lifecycle — <strong>EDA</strong>, <strong>feature engineering</strong>, <strong>modeling</strong>, and <strong>forecasting</strong>.
+            Turning messy business problems into deployed ML solutions across the full data science lifecycle — <strong>EDA</strong>, <strong>feature engineering</strong>, <strong>modeling</strong>, and <strong>MLOps</strong>.
           </p>
           <h2 class="pre-title"> ♠ "I can predict your ŷ , but first I prefer to minimize my J(θ)."</h2>
           
@@ -94,9 +94,9 @@
       <div class="about-container">
         <div class="about-text reveal reveal-left">
           <h2 class="about-title">ABOUT ME</h2>
-          <p>I am a Data Scientist based in Nagpur, India, with hands-on experience across the full data science lifecycle — EDA, feature engineering, model building, and evaluation for prediction, classification, and time series forecasting problems.</p>
-          <p>I'm comfortable working in Python and SQL, with a solid grounding in statistics and a track record of turning messy business problems into working ML solutions, most notably integrating CRM and ERP systems to streamline the Quote-to-Cash process.</p>
-          <p>I'm also exploring Generative AI and LLMs (prompt engineering, RAG) alongside my core ML and analytics work in Power BI.</p>
+          <p>I am a Data Scientist & Analyst based in Nagpur, India, with 2 years 9 months of hands-on experience taking problems from raw data to deployed models — EDA, feature engineering, model building, evaluation, and deployment across regression, classification, NLP, and anomaly detection.</p>
+          <p>At Influx Control Panel, I built and deployed a Random Forest pricing model that cut quotation turnaround from days to seconds, set up automated ELT pipelines (MySQL, dbt, PostgreSQL), and delivered Power BI dashboards behind a 10% lift in sales conversion, a 12% rise in shop-floor throughput, and a 14% drop in product returns. I also integrated CRM and ERP data to streamline the Quote-to-Cash process.</p>
+          <p>Outside work, I build end-to-end projects: a complaint triage platform on 150,000 CFPB complaints with fine-tuned RoBERTa, a local RAG question-answering system over 49,877 Amazon reviews, and a live shopper purchase-intent MLOps pipeline with MLflow and drift monitoring. I work in Python, SQL, Docker, and CI/CD, and I document assumptions and limitations so results can be trusted.</p>
           <p class="about-goal">My goal is to keep building production-grade ML systems that turn raw business data into measurable operational impact.</p>
           <div class="about-buttons">
             <a href="#resume" 
@@ -125,7 +125,69 @@
       </div>
 
       <div class="project-gallery">
-        <div class="project-card glass-card tilt-effect reveal" data-project="shoppers-intent">
+
+        <!-- NEW: BankSight -->
+        <div class="project-card glass-card tilt-effect reveal" data-project="banksight">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">NLP &amp; ANALYTICS</div>
+            <h3>BankSight Consumer Complaint Intelligence Platform</h3>
+            <p>End-to-end triage system on 150,000 CFPB complaints that ranks them by their chance of getting relief, using fine-tuned RoBERTa, calibrated scores, and drift monitoring.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-robot"></i> RoBERTa · PR-AUC 0.403</span>
+              <span class="card-stat"><i class="fa-solid fa-database"></i> DuckDB · dbt · Snowflake</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">RoBERTa</span>
+              <span class="chip">dbt</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">Prefect</span>
+              <span class="chip">AWS S3</span>
+            </div>
+            <div class="card-links">
+              <a href="https://banksight-consumer-complaint-intelligence-platform-moyi7xojmmp.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/BankSight-Consumer-Complaint-Intelligence-Platform" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: ShopSense -->
+        <div class="project-card glass-card tilt-effect reveal delay-100" data-project="shopsense">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">RAG &amp; LLM</div>
+            <h3>ShopSense Product Review Q&amp;A System</h3>
+            <p>Local question-answering system over 49,877 Amazon reviews with cited answers, a LangGraph routing agent, and prompt-injection testing. No paid API.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-magnifying-glass"></i> 19/19 Retrieval Hits</span>
+              <span class="card-stat"><i class="fa-solid fa-shield-halved"></i> 0/15 Injections Obeyed</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">LangGraph</span>
+              <span class="chip">LanceDB</span>
+              <span class="chip">Ollama</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://nihargudadhe-shopsense-product-review-i-appstreamlit-app-128zcr.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/ShopSense_Product-Review-Intelligence-Copilot" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="shoppers-intent">
           <div class="card-glow"></div>
           <div class="card-hint">
             <i class="fa-solid fa-computer"></i>
@@ -134,7 +196,7 @@
           <div class="card-content">
             <div class="tech-badge">ML MODEL</div>
             <h3>Shoppers Intent MLOps Pipeline</h3>
-            <p>End-to-end production-grade MLOps classification system predicting online shopper purchase intentions.</p>
+            <p>End-to-end production-grade MLOps classification system predicting online shopper purchase intentions, with 91.8% accuracy and 97.3% ROC-AUC.</p>
             <div class="card-stats">
               <span class="card-stat"><i class="fa-solid fa-robot"></i> RF / XGBoost / LightGBM</span>
               <span class="card-stat"><i class="fa-solid fa-server"></i> Deployed on Render</span>
@@ -144,6 +206,7 @@
               <span class="chip">FastAPI</span>
               <span class="chip">MLflow</span>
               <span class="chip">Docker</span>
+              <span class="chip">GitHub Actions</span>
               <span class="chip">Evidently AI</span>
             </div>
             <div class="card-links">
@@ -153,62 +216,7 @@
           </div>
         </div>
 
-    <div class="project-card glass-card tilt-effect reveal" data-project="opinion-metrix">
-      <div class="card-glow"></div>
-      <div class="card-hint">
-        <i class="fa-solid fa-computer"></i>
-           <span>Click to learn more</span>
-   </div>
-  <div class="card-content">
-    <div class="tech-badge">ML MODEL</div>
-    <h3>OpinionMetrix AI Sentiment Transformer</h3>
-    <p>Advanced transformer-based sentiment analysis pipeline evaluating contextual polarity and fine-tuned embeddings for text data.</p>
-    <div class="card-stats">
-      <span class="card-stat"><i class="fa-solid fa-robot"></i> Transformers / PyTorch</span>
-      <span class="card-stat"><i class="fa-solid fa-server"></i> Hugging Face</span>
-    </div>
-    <div class="card-chips">
-      <span class="chip">Python</span>
-      <span class="chip">Transformers</span>
-      <span class="chip">PyTorch</span>
-      <span class="chip">Hugging Face</span>
-    </div>
-    <div class="card-links">
-      <!-- Add your live demo link here if deployed, or remove/comment out if code-only -->
-      <a href="https://opinionmetrixaisentimenttransformer-ypjssvcke9exjdv4cmw4xm.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
-      <a href="https://github.com/NiharGudadhe/OpinionMetrix_AI_Sentiment_Transformer" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
-    </div>
-  </div>
-</div>
-
-
-        <div class="project-card glass-card tilt-effect reveal delay-100" data-project="laptop-price">
-          <div class="card-glow"></div>
-          <div class="card-hint">
-            <i class="fa-solid fa-computer"></i>
-            <span>Click to learn more</span>
-          </div>
-          <div class="card-content">
-            <div class="tech-badge">ML MODEL</div>
-            <h3>Laptop Price Prediction System</h3>
-            <p>End-to-end machine learning pipeline for laptop price prediction with a modular, deployment-ready structure.</p>
-            <div class="card-stats">
-              <span class="card-stat"><i class="fa-solid fa-diagram-project"></i> Modular Pipeline</span>
-              <span class="card-stat"><i class="fa-solid fa-code"></i> Flask / FastAPI</span>
-            </div>
-            <div class="card-chips">
-              <span class="chip">Python</span>
-              <span class="chip">Flask</span>
-              <span class="chip">FastAPI</span>
-            </div>
-            <div class="card-links">
-              <a href="https://laptoppricepredictionmle2eproject-kmcx4rtwptrbmdd4mjn7hd.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
-              <a href="https://github.com/NiharGudadhe/Laptop_Price_Prediction_ML_E2E_Project" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="sqipe-platform">
+        <div class="project-card glass-card tilt-effect reveal" data-project="sqipe-platform">
           <div class="card-glow"></div>
           <div class="card-hint">
             <i class="fa-solid fa-computer"></i>
@@ -217,7 +225,7 @@
           <div class="card-content">
             <div class="tech-badge">DATA SCIENCE &amp; MLOPS</div>
             <h3>Sqipe Enterprise Analytics &amp; ML Pricing Platform</h3>
-            <p>End-to-end automated ELT pipelines, dbt data modeling, Random Forest pricing regression, and real-time FastAPI inference services.</p>
+            <p>End-to-end automated ELT pipelines, dbt data modeling, Random Forest pricing regression, and real-time FastAPI inference services that cut quotes from days to seconds.</p>
             <div class="card-stats">
               <span class="card-stat"><i class="fa-solid fa-robot"></i> Scikit-Learn ML Model</span>
               <span class="card-stat"><i class="fa-solid fa-server"></i> FastAPI Endpoints</span>
@@ -230,6 +238,7 @@
               <span class="chip">dbt</span>
               <span class="chip">FastAPI</span>
               <span class="chip">Docker</span>
+              <span class="chip">GitHub Actions</span>
               <span class="chip">Power BI</span>
             </div>
             <div class="card-links">
@@ -237,6 +246,121 @@
                 <i class="fa-solid fa-lock"></i> INTERNAL PROJECT
               </button>
               <a href="https://github.com/NiharGudadhe" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: SkillSync -->
+        <div class="project-card glass-card tilt-effect reveal delay-100" data-project="skillsync">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">NLP</div>
+            <h3>SkillSync Semantic Resume-JD Matcher</h3>
+            <p>End-to-end NLP project that scores resumes against job descriptions by meaning, using dense embeddings, cosine similarity, and regex-based skill extraction.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-robot"></i> Sentence-Transformers</span>
+              <span class="card-stat"><i class="fa-solid fa-server"></i> Streamlit Cloud</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Sentence-Transformers</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">pypdf</span>
+              <span class="chip">pytest</span>
+              <span class="chip">GitHub Actions</span>
+            </div>
+            <div class="card-links">
+              <a href="https://nihargudadhe-skillsync-semantic-resume-jd-matcher-app-0kwffc.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/SkillSync_Semantic-Resume-JD-Matcher" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW: FinRisk Guard -->
+        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="finrisk-guard">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">FINANCIAL NLP &amp; MLOPS</div>
+            <h3>FinRisk Guard SEC Compliance &amp; Risk Intelligence Pipeline</h3>
+            <p>Asynchronous pipeline that ingests SEC filings and financial text, classifies risk sentiment with an imbalance-corrected LightGBM model, and builds warehouse views with dbt-style SQL.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-bolt"></i> LightGBM + SMOTE</span>
+              <span class="card-stat"><i class="fa-solid fa-server"></i> Async FastAPI</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">LightGBM</span>
+              <span class="chip">spaCy</span>
+              <span class="chip">SQLGlot</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">GitHub Actions</span>
+              <span class="chip">Render</span>
+            </div>
+            <div class="card-links">
+              <a href="https://finrisk-guard-ef2j35c8owen2delczafs2.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/FinRisk-Guard" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal delay-200" data-project="opinion-metrix">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>OpinionMetrix AI Sentiment Transformer</h3>
+            <p>End-to-end NLP web app that classifies text reviews as Positive, Negative, or Neutral with confidence scoring and live MySQL feedback logging.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-robot"></i> Sentiment + Probability Scores</span>
+              <span class="card-stat"><i class="fa-solid fa-database"></i> Live MySQL Logging</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Scikit-Learn</span>
+              <span class="chip">Streamlit</span>
+              <span class="chip">MySQL</span>
+            </div>
+            <div class="card-links">
+              <a href="https://opinionmetrixaisentimenttransformer-ypjssvcke9exjdv4cmw4xm.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/OpinionMetrix_AI_Sentiment_Transformer" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card tilt-effect reveal" data-project="laptop-price">
+          <div class="card-glow"></div>
+          <div class="card-hint">
+            <i class="fa-solid fa-computer"></i>
+            <span>Click to learn more</span>
+          </div>
+          <div class="card-content">
+            <div class="tech-badge">ML MODEL</div>
+            <h3>Laptop Price Prediction System</h3>
+            <p>End-to-end machine learning project that predicts laptop prices from hardware specifications, with a modular pipeline and a Streamlit web app.</p>
+            <div class="card-stats">
+              <span class="card-stat"><i class="fa-solid fa-diagram-project"></i> Modular Pipeline</span>
+              <span class="card-stat"><i class="fa-solid fa-window-maximize"></i> Streamlit App</span>
+            </div>
+            <div class="card-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">Streamlit</span>
+            </div>
+            <div class="card-links">
+              <a href="https://laptoppricepredictionmle2eproject-kmcx4rtwptrbmdd4mjn7hd.streamlit.app/" target="_blank" class="link-btn"><i class="fa-solid fa-play"></i> LIVE DEMO</a>
+              <a href="https://github.com/NiharGudadhe/Laptop_Price_Prediction_ML_E2E_Project" target="_blank" class="link-btn"><i class="fa-brands fa-github"></i> CODE</a>
             </div>
           </div>
         </div>
@@ -312,20 +436,28 @@
         <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-comments"></i></div><h4>NLP</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-solid fa-eye"></i></div><h4>Computer Vision</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-robot"></i></div><h4>Generative AI / LLMs</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-share-nodes"></i></div><h4>RAG &amp; LangGraph</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-face-smile"></i></div><h4>Hugging Face / RoBERTa</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-chart-area"></i></div><h4>Statistics</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div><h4>Model Evaluation &amp; Calibration</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div><h4>EDA</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-broom"></i></div><h4>Data Cleaning</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-sliders"></i></div><h4>Feature Engineering</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="80"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Pandas / NumPy</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="75"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Scikit-learn</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
-        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-bolt"></i></div><h4>XGBoost</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-bolt"></i></div><h4>XGBoost / LightGBM</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div><h4>TensorFlow / PyTorch</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><h4>Matplotlib / Seaborn</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="85"><div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div><h4>Power BI / DAX</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-solid fa-chart-simple"></i></div><h4>Tableau</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-window-maximize"></i></div><h4>Streamlit</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="70"><div class="skill-icon"><i class="fa-solid fa-database"></i></div><h4>PostgreSQL / MySQL</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-solid fa-snowflake"></i></div><h4>DuckDB / Snowflake</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-arrows-rotate"></i></div><h4>dbt &amp; ETL / ELT</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="55"><div class="skill-icon"><i class="fa-solid fa-server"></i></div><h4>FastAPI</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="60"><div class="skill-icon"><i class="fa-brands fa-docker"></i></div><h4>Docker</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-flask"></i></div><h4>MLflow / Evidently AI</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
+        <div class="skill-block" data-level="65"><div class="skill-icon"><i class="fa-solid fa-gears"></i></div><h4>CI/CD (GitHub Actions)</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="90"><div class="skill-icon"><i class="fa-brands fa-git"></i></div><h4>Git & GitHub</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
         <div class="skill-block" data-level="50"><div class="skill-icon"><i class="fa-brands fa-aws"></i></div><h4>AWS</h4><span class="skill-percent">Proficient</span><div class="skill-loader"><i class="fa-solid fa-spinner"></i></div></div>
       </div>
